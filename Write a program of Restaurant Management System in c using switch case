@@ -1,0 +1,143 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+    int option;
+    int opt1,opt2,opt3,opt4;
+    int bill=0;
+    int q1,q2,q3,q4;
+        printf("\n==========================welcome to Restaurant Management System==============================\n");
+        printf("1.starter:\n");
+        printf("2.Meals:\n");
+        printf("3.Snacks:\n");
+        printf("4.Drinks\n");
+        printf("Enter your option to select the Dish\n");
+
+        scanf("%d",&option);
+        switch(option)
+        {
+        case 1:
+            printf("============Starter==============\n");
+            printf("Enter the item you want:\n");
+            printf("Starter 1 ==:100\n");
+            printf("Starter 2 ==:150\n");
+            printf("Starter 3 ==:200\n");
+            printf("select your choice:\n");
+            scanf("%d",&opt1);
+
+            printf("Enter the quality: %d\n",q1);
+            scanf("%d",&q1);
+            switch(opt1)
+            {
+                case 1:
+                    bill = bill+100*q1;
+                    break;
+                case 2:
+
+                    bill = bill+ 150*q1;
+                    break;
+                case 3:
+
+                    bill = bill+200*q1;
+                    break;
+                default:
+                    printf("Dont go for extra dishes:\n");
+
+            printf(" amount is : %d",bill);
+            }
+            break;
+
+        case 2:
+            printf("============Meals==============\n");
+            printf("Full Meals 1 ==:150\n");
+            printf("Half Meals 2 ==:130\n");
+            printf("Extra Rice 3 ==:50\n");
+            printf("select your choice:\n");
+            scanf("%d",&opt2);
+
+            printf("enter the quality:%d\n",q2);
+            scanf("%d",&q2);
+            switch(opt2)
+            {
+                case 1:
+
+                    bill =bill+100*q2;
+                    break;
+                case 2:
+
+                    bill = bill+150*q2;
+                    break;
+                case 3:
+
+                    bill = bill+50*q2;
+                    break;
+                default:
+                    printf("Dont go for extra dishes:\n");
+
+
+            }
+            break;
+
+        case 3:
+            printf("============Snacks==============\n");
+            printf("milk + biscuits 1 ==:80\n");
+            printf("biscuits +chai 2 ==:70\n");
+            printf("chai 3 ==:50\n");
+            printf("select your choice:\n");
+            scanf("%d",&opt3);
+
+            printf("enter the quality:%d\n",q3);
+            scanf("%d",&q3);
+            switch(opt3)
+            {
+                case 1:
+
+                    bill =bill+100*q3;
+                    break;
+                case 2:
+
+                    bill = bill+150*q3;
+                    break;
+                case 3:
+
+                    bill = bill+50*q3;
+                    break;
+                default:
+                    printf("Dont go for extra dishes:\n");
+            }
+            break;
+
+        case 4:
+            printf("============Drink==============\n");
+            printf("Hot Drink 1 ==:100\n");
+            printf("Cold Drink 2 ==:90\n");
+            printf("Soft Drink ==:150\n");
+            printf("select your choice:\n");
+            scanf("%d",&opt4);
+
+            printf("enter the quality:%d\n",q4);
+            scanf("%d",&q4);
+            switch(opt4)
+            {
+                case 1:
+
+                    bill =bill+100*q4;
+                    break;
+                case 2:
+
+                    bill = bill+150*q4;
+                    break;
+                case 3:
+
+                    bill = bill+50*q4;
+                    break;
+                default:
+                    printf("Don't go for extra dishes\n");
+            }
+            break;
+        }
+
+
+    printf(" approximate amount is : %d\n",bill);
+
+}
